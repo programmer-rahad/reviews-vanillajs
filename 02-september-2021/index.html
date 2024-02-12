@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reviews / Testimonials (Thursday, 2 September 2021)</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 80vw;
+        max-width: 620px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 70px;
+        margin-bottom: 60px;
+      }
+      @media(max-width:575.98px) {
+        .container {
+          margin-top: 60px;
+        }
+      }
+      body {
+        background-color: #eef4fa;
+        color: #122738; 
+        text-align: center;
+        align-items: center;
+        font-family: 'Open Sans', sans-serif;
+      }
+      i {
+        cursor: pointer;
+        color: #49a6e9;
+        font-size: 25px;
+        margin: 0 8px;
+      }
+      h2 {
+        margin-bottom: 20px;
+        font-size: 30px;
+      }
+      h3 {
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 12.5px;
+      }
+      h4 {
+        color: #49a6e9;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    margin-top: 3px;
+      }
+      p {
+        color: #617d98;
+        margin-bottom: 10px;
+      }
+      button {
+        text-transform: uppercase;
+        border-radius: 4px;
+        letter-spacing: 1px;
+        font-weight: 800;
+        font-size: 12px;
+        padding: 5px 18px;
+        cursor: pointer;
+        border: 2px solid #49a6e9; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7px;
+        display: block;
+        background: transparent;
+      }
+      button:hover {
+        background-color: #49a6e9;
+        color: #fff; 
+      }
+      .review-image {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        margin: 0 auto;
+        z-index: 1;
+      }
+      .reviews-container {
+        background-color: #fff;
+        padding: 30px 20px 35px;
+        border-radius: 10px;
+      }
+      .review-image:before {
+        width: 100%;
+        height: 100%;
+        content: ' ';
+        position: absolute;
+        background-color: #49a6e9;
+        border-radius: 50%;
+        z-index: -1;
+        top: -4px;
+        right: -8px;
+      }
+      .review-image:after {
+        content: '\f10e';
+        font-family: 'Font Awesome 5 Free';
+        background: #49a6e9;
+        color: #fff;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        font-weight: 900;
+        line-height: 40px;
+        border-radius: 50%;
+        left: -10px;
+        top: 23px;
+      }
+      img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="reviews">
+      <div class="container">
+        <h2>Our Reviews</h2>
+        <div class="reviews-container">
+          <div class="review-items">
+            <!-- <div class="review-item">
+              <div class="review-image">
+                <img
+                  src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg"
+                  alt=""
+                />
+              </div>
+              <h3>susan smith</h3>
+              <h4>web developer</h4>
+              <p>
+                I'm baby meggings twee health goth +1. Bicycle rights tumeric
+                chartreuse before they sold out chambray pop-up. Shaman
+                humblebrag pickled coloring book salvia hoodie, cold-pressed
+                four dollar toast everyday carry
+              </p>
+            </div> -->
+          </div>
+          <div class="review-buttons">
+            <i class="fas fa-angle-left"></i>
+            <i class="fas fa-angle-right"></i>
+            <button>Random</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      !(function () {
+        'use strict';
+        const reviewItems = document.querySelector('.review-items');
+        const buttons = document.querySelectorAll('.review-buttons > *');
+        const reviews = [
+          {
+            id: 1,
+            name: 'susan smith',
+            job: 'web developer',
+            img: 'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
+            text: "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+          },
+          {
+            id: 2,
+            name: 'anna johnson',
+            job: 'web designer',
+            img: 'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg',
+            text: 'Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.',
+          },
+          {
+            id: 3,
+            name: 'peter jones',
+            job: 'intern',
+            img: 'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg',
+            text: 'Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.',
+          },
+          {
+            id: 4,
+            name: 'bill anderson',
+            job: 'the boss',
+            img: 'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg',
+            text: 'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
+          },
+        ];
+        let index = 0;
+
+        // Functions: Show Single Item
+        function showSingleItem() {
+          const html = `
+            <div class="review-item">
+              <div class="review-image">
+                <img
+                  src="${reviews[index].img}"
+                  alt=""
+                />
+              </div>
+              <h3>${reviews[index].name}</h3>
+              <h4>${reviews[index].job}</h4>
+              <p>
+                ${reviews[index].text}
+              </p>
+            </div>
+          `;
+          reviewItems.innerHTML = html;
+        }
+
+        // DOM Content Loaded
+        document.addEventListener('DOMContentLoaded', function () {
+          showSingleItem();
+          for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener('click', function () {
+              if (this === this.parentElement.children[0]) {
+                index = !index ? reviews.length - 1 : --index;
+              } else if (this === this.parentElement.children[1]) {
+                index = index > reviews.length - 2 ? 0 : ++index;
+              } else {
+                index = Math.floor(Math.random() * reviews.length);
+              }
+              showSingleItem();
+            });
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
